@@ -49,7 +49,7 @@ public class BinarySearch {
      * @param arr the targeted array to be checked
      * @return a result of the check, if the array is sorted it will return true, otherwise, false
      * */
-    private static boolean isSorted(int[] arr){
+    private boolean isSorted(int[] arr){
 
         for (int i = 0; i < arr.length-1; i++){
             if(arr[i] > arr[i+1])
