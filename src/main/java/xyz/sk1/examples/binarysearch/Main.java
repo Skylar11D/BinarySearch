@@ -18,7 +18,7 @@ public class Main {
         /*populate(array, 20);*/
 
         try {
-            index = binarySearch.indexOf(4, array);
+            index = binarySearch.indexOf(11, array);
         } catch (ArrayNotSortedException e) {
             e.printStackTrace();
         }
