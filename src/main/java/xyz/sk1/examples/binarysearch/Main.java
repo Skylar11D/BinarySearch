@@ -17,14 +17,6 @@ public class Main {
 
         /*populate(array, 20);*/
 
-        if(!isSorted(array)){
-            try {
-                throw new ArrayNotSortedException("The specified array must be sorted for binary search");
-            } catch (ArrayNotSortedException e) {
-                throw new RuntimeException(e);
-            }
-        }
-
         try {
             index = binarySearch.indexOf(4, array);
         } catch (ArrayNotSortedException e) {
