@@ -42,4 +42,17 @@ public class BinarySearch {
         return -1;
     }
 
+    /**
+     * @param arr the targeted array to be checked
+     * @return a result of the check, if the array is sorted it will return true, otherwise, false
+     * */
+    private static boolean isSorted(int[] arr){
+
+        for (int i = 0; i < arr.length-1; i++){
+            if(arr[i] > arr[i+1])
+                return false;
+        }
+        return true;
+    }
+
 }
