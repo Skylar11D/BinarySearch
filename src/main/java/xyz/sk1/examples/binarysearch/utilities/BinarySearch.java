@@ -22,8 +22,8 @@ public class BinarySearch {
     * @return the index of the targeted number, otherwise, -1*/
     public int indexOf(int targetNumber, int[] targetArray) throws ArrayNotSortedException {
 
-        if(!isSorted(array))
-            throw new ArrayNotSortedException("The specified array must be sorted for binary search");
+        //if(!isSorted(array))
+            //throw new ArrayNotSortedException("The specified array must be sorted for binary search");
 
         int lowIndex = 0, highIndex = targetArray.length-1, middleIndex = lowIndex+(highIndex-lowIndex)/2;
 
@@ -37,7 +37,7 @@ public class BinarySearch {
             }
 
             if(targetNumber > targetArray[middleIndex]){
-                highIndex = middleIndex+1; //eliminates the left half
+                lowIndex = middleIndex+1; //eliminates the left half
             }
 
         }
